@@ -126,6 +126,14 @@ resource "aws_iam_role_policy_attachment" "attach_s3_policy" {
 }
 ```
 - 생성한 IAM 역할에 S3 full access 정책을 연결합니다.
+- 
+### ⛲ 실행
+```sh
+terraform init
+terraform plan
+terraform apply
+# terraform apply auto-approve 시 확인 작업 안해도 됩니다.
+
 
 ## 🔍 주의사항
 1. S3 버킷을 public으로 설정하면 보안 위험이 있을 수 있습니다. 필요한 경우에만 사용하세요.
